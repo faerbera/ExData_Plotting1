@@ -22,16 +22,16 @@ if(file.exists("./data/tidydata.csv")) {
 
 #Save as PNG, 480px x 480px
 #named plot2.png
+plot.new()
 png("plot2.png",width = 480, height = 480)
 
 
-#Plot Chart 1-------------------------------
-#Histogram of Global Active Power 
-#12 buckets
-#Red bars
-lines(dat$Date, dat$Global_active_power,
+#Plot-------------------------------
+
+plot(dat$dateTime, dat$Global_active_power,
      main = "Global Active Power",
-     ylab = "Global Active Power (kilowatts)")
-axis(1, at = c(as_datetime("2007-02-01 00:00"),as_datetime("2007-02-02 00:00")), labels = c("Thu","Fri"))
+     ylab = "Global Active Power (kilowatts)", 
+     xlab = "",
+     type = "l")
 
 dev.off()

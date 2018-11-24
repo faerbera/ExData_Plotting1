@@ -1,3 +1,10 @@
+## Course Assignment Instructions
+This assignment creates 4 plots. Each plot is created with a .R file (plot1.R-plot4.R). Additionally, common functions are in the functions.R file sourced into each plot code file. 
+Data comes from the URL below and is downloaded, unzipped into the ./data directory. 
+Outputs are added into ./ as requested by the assignment instructions. 
+
+To create the plots, locate plotX.R and functions.R in the same directory and run plotX.R. The file plotX.png will be created. 
+
 ## Introduction
 
 This assignment uses data from
